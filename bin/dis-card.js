@@ -31,13 +31,14 @@ function toggleHighlight() {
 
 //RESET ALL
 function playAgain(int){
+	if (int === 1) cells = ["heart", "diamond", "number", "club", "face", "spade"];
 	if (int === 2) cells = ["diamond", "heart", "lt7", "gt6", "red", "odd", "club", "spade", "face", "number", "even", "black"];
-	if (int === 3) cells = ["heart", "diamond", "number", "club", "face", "spade"];
+	if (int === 3) cells = ["kind4", "kind3", "kind2", "face", "lt7", "gt6", "row3", "row4", "red", "black", "even", "odd"];
 	for (var i = 0; i < cells.length; i++) {
 		document.getElementById(cells[i] + "DIV").style.display = "block"; //RE-SHOW ANY HIDDEN CELLS
 		document.getElementById(cells[i] + "1").checked = false; //UNCHECK EACH LEFT BOX
 		document.getElementById(cells[i] + "2").checked = false; //UNCHECK EACH RIGHT BOX
-		if (int === 3) document.getElementById(cells[i] + "3").checked = false; //UNCHECK EACH RIGHT BOX
+		if (int === 1) document.getElementById(cells[i] + "3").checked = false; //UNCHECK EACH RIGHT BOX
 		document.getElementById(cells[i]).className = 'sidesContent'; //UN-HIGHLIGHT ALL CELLS
 	}
 }

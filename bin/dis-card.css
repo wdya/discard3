@@ -18,6 +18,12 @@ input[type='checkbox'] + label /*customize here*/ {
 	font-size: 50px; /*same as height*/
 	text-align: center; 
 }
+input[type='checkbox'].smaller + label{
+	width: 35px;
+	height: 35px;
+	line-height: 35px; /*for the label (the checkmark)*/
+	font-size: 35px; /*same as height*/
+}
 input[type='checkbox']:checked + label:after {
 	display: inline-block; /*shows when checked*/
 	content: '\2713'; /*checkmark*/ /*00D7 is an X, but it's small*/
@@ -73,6 +79,11 @@ td.centerBottom {
 img {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+img.icon {
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 20px;
 }
 
 /*TEXT STYLINGS*/
