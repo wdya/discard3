@@ -44,6 +44,7 @@ td.sidesContent.highlight{
 	background: yellow;
 }
 
+/*STYLING THE FADE-OUT EFFECT*/
 .toFade {
 	opacity: 1;
 	transition: opacity 2s;
@@ -84,6 +85,12 @@ img.icon {
 	margin-top: 0;
 	margin-bottom: 0;
 	height: 20px;
+}
+
+button.rules {
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 /*TEXT STYLINGS*/
