@@ -134,14 +134,14 @@ button.rules {
 	text-align: center;
 }
 .numbersB /*COOPER, BIGGER, ALTERNATING COLORS*/ {
-	font-family:Cooper, Arial;
+	font-family: Cooper, Arial;
 	font-size: 28px;
 	color: black;
 }
-.numbersG {
-	font-family:Cooper, Arial;
+.numbersR {
+	font-family: Cooper, Arial;
 	font-size: 28px;
-	color: green;
+	color: red;
 }
 .bottom {
 	position: fixed;
